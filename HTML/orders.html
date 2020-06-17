@@ -52,97 +52,91 @@
         </div>
 
         <!--    BOUQUET    -->
-        <div class="row form-group">
-            <div class="col-sm-11 text-left">
-                <h5>bouquet of 10 - 12 helium filled ballons</h5>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="bouquet">bouquets: $50 x</label>
-                <input type="number" class="text-right" min="0" max="50" placeholder="0" id="bouquet" name="bouquet">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="foil">foil/mylar add-on balloon(s) </label>
-                <input type="number" min="0" max="50" placeholder="0" id="foil" name="foil">
+        <div class="container-fluid">
+            <div class="row form-group background">
+                <div class="col-sm-7 text-left">
+                    <h5>bouquet of 10 - 12 helium filled balloons</h5>
+                    <div class="row">
+                        <div class="offset-sm-1 col-sm-7 text-left">
+                            <label for="bouquet">bouquets: $50 x</label>
+                            <input type="number" min="0" max="50" placeholder="0" id="bouquet" name="bouquet">
+                            <label for="foil">foil/mylar add-on balloon(s) x </label>
+                            <input type="number" min="0" max="50" placeholder="0" id="foil" name="foil">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-left">
+                    <label for="bouq_comments">special instructions/description</label>
+                    <textarea aria-hidden="true" class="form-control" id="bouq_comments" rows="2" name="bouq_comments" required></textarea>
+                </div>
             </div>
         </div>
 <!--     BOUQUET   -->
 <!--     GARLAND   -->
-        <div class="row form-group">
-            <div class="col-sm-11 text-left">
-                <h5>garland of balloons</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="garland_10">10 foot garland:  $150 x</label>
-                <input type="number"  min="0" max="10" placeholder="0" id="garland_10" name="garland_10">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="garland_15">15 foot garland: $225 x</label>
-                <input type="number" min="0" max="10" placeholder="0" id="garland_15" name="garland_15">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="garland_20">20 foot garland: $300 x</label>
-                <input type="number" min="0" max="10" placeholder="0" id="garland_20" name="garland_20">
+        <div class="container-fluid">
+            <div class="row form-group background">
+                <div class="col-sm-7 text-left">
+                    <h5>garland of balloons</h5>
+                    <div class="row">
+                        <div class="offset-sm-1 col-sm-7 text-left">
+                            <label for="garland_10">10 foot garland:  $150 x</label>
+                            <input type="number"  min="0" max="10" placeholder="0" id="garland_10" name="garland_10">
+                            <label for="garland_15">15 foot garland: $225 x</label>
+                            <input type="number" min="0" max="10" placeholder="0" id="garland_15" name="garland_15">
+                            <label for="garland_20">20 foot garland: $300 x</label>
+                            <input type="number" min="0" max="10" placeholder="0" id="garland_20" name="garland_20">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-left">
+                    <label for="gar_comments">special instructions/description</label>
+                    <textarea aria-hidden="true" class="form-control" id="gar_comments" rows="3" name="gar_comments" required></textarea>
+                </div>
+
             </div>
         </div>
 <!--    GARLAND    -->
 <!--    NUMBERS    -->
-        <div class="row">
-            <div class="col-sm-11 text-left">
-                <h5>numbers</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="numbers_1">1 number </label>
-                <input type="number" min="0" max="9" placeholder="0" id="numbers_1" name="numbers_1">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="numbers_2">2 numbers </label>
-                <input type="number" min="10" max="99" placeholder="10" id="numbers_2" name="numbers_2">
+        <div class="container-fluid">
+            <div class="row form-group background">
+                <div class="col-sm-7 text-left">
+                    <h5>numbers</h5>
+                    <div class="row">
+                        <div class="offset-sm-1 col-sm-4 text-left">
+                            <label for="numbers_1">1 number </label>
+                            <input type="number" min="0" max="9" placeholder="0" id="numbers_1" name="numbers_1">
+                                <label for="numbers_2">2 numbers </label>
+                                <input type="number" min="10" max="99" placeholder="10" id="numbers_2" name="numbers_2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-left">
+                    <label for="num_comments">special instructions/description</label>
+                    <textarea aria-hidden="true" class="form-control" id="num_comments" rows="2" name="num_comments" required></textarea>
+                </div>
             </div>
         </div>
 <!--    NUMBERS    -->
 <!--    ADD-ONS    -->
-        <div class="row">
-            <div class="col-sm-11 text-left">
-                <h5>add-ons</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="foil">foil/mylar add-on balloon(s) </label>
-                <input type="number" min="0" max="50" placeholder="0" id="foil" name="foil">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="confetti">confetti cannon </label>
-                <input type="number" min="0" max="50" placeholder="0" id="confetti" name="confetti">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="sunglasses">fun sunglasses </label>
-                <input type="number" min="0" max="50" placeholder="0" id="sunglasses" name="sunglasses">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <label for="specialty">specialty balloons </label>
-                <input type="number" min="0" max="50" placeholder="0" id="specialty" name="specialty">
+        <div class="container-fluid">
+            <div class="row form-group background">
+                <div class="col-sm-7 text-left">
+                    <h5>add-ons</h5>
+                    <div class="row">
+                        <div class="offset-sm-1 col-sm-5 text-left">
+                            <label for="confetti">confetti cannons x</label>
+                            <input type="number" min="0" max="50" placeholder="0" id="confetti" name="confetti">
+                            <label for="sunglasses">fun sunglasses x</label>
+                            <input type="number" min="0" max="50" placeholder="0" id="sunglasses" name="sunglasses">
+                            <label for="specialty">specialty balloons x</label>
+                            <input type="number" min="0" max="50" placeholder="0" id="specialty" name="specialty">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-left">
+                    <label for="add_comments">special instructions/description</label>
+                    <textarea aria-hidden="true" class="form-control" id="add_comments" rows="3" name="add_comments" required></textarea>
+                </div>
             </div>
         </div>
 <!--    ADD-ONS-->
@@ -199,16 +193,17 @@
             <div class="col-sm-6 text-left">
                 <label for="time"><h5>delivery/pick-up time</h5></label>
             </div>
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    <textarea class="form-control" id="time" rows="1" name="time" required></textarea>
+                </div>
+            </div>
+            <div class="col-sm-5 ">
                 <label for="comments">tell us about the event and delivery instructions</label>
-                <textarea aria-hidden="true"  class="form-control" id="comments" rows="5" name="comments" required></textarea>
+                <textarea aria-hidden="true" class="form-control" id="comments" rows="5" name="comments" required></textarea>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 text-left">
-                <textarea class="form-control" id="time" rows="1" name="time" required></textarea>
-            </div>
-        </div>
+
 <!--    DELIVERY TIME    -->
 
         <div class="row">
