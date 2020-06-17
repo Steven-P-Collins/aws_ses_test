@@ -9,14 +9,16 @@
 </head>
 <body>
 <div class="container-fluid text-center justify-content-center">
-    <h5>orders</h5>
-    <h2>select delivery zone to find your minimum order and delivery fee</h2>
+    <h1>orders</h1>
     <form class="form" enctype="text/plain">
         <div class="row">
-            <div class="col-sm-3 text-left form-group">
-                <label for="del_zone"><h5>delivery zone</h5></label>
+            <div class="col-sm-11 text-left form-group">
+                <h5>delivery zone and fees</h5>
             </div>
-            <div class="col-sm-3 text-right">
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-9 text-left">
+                <label for="del_zone">delivery zone</label>
                 <select id="del_zone" name="delivery" required>
                     <option value="1">10573</option>
                     <option value="1">10580</option>
@@ -34,54 +36,61 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-2 text-left form-group">
-                <h5>delivery fee: </h5>
-            </div>
-            <div class="col-sm-2 text-right">
-                <h5>$50</h5>
+            <div class="col-sm-9 text-left">
+                <p>delivery fee: $50</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3 text-left form-group">
-                <h5>minimum order: </h5>
-            </div>
-            <div class="col-sm-1 text-right">
-                <h5>$150 </h5>
+            <div class="col-sm-9 text-left">
+                <p>minimum order: $150</p>
             </div>
         </div>
-<!--    BOUQUET    -->
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-9 text-left">
+                <p>minimum order + delivery = $200</p>
+            </div>
+        </div>
+
+        <!--    BOUQUET    -->
+        <div class="row form-group">
+            <div class="col-sm-11 text-left">
                 <h5>bouquet of 10 - 12 helium filled ballons</h5>
             </div>
+
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="bouquet">bouquets: $50 x</label>
                 <input type="number" class="text-right" min="0" max="50" placeholder="0" id="bouquet" name="bouquet">
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-9 text-left">
+                <label for="foil">foil/mylar add-on balloon(s) </label>
+                <input type="number" min="0" max="50" placeholder="0" id="foil" name="foil">
+            </div>
+        </div>
 <!--     BOUQUET   -->
 <!--     GARLAND   -->
-        <div class="row">
-            <div class="col-sm-5 col-xl-4">
-                <h5>garland of ballons</h5>
+        <div class="row form-group">
+            <div class="col-sm-11 text-left">
+                <h5>garland of balloons</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="garland_10">10 foot garland:  $150 x</label>
                 <input type="number"  min="0" max="10" placeholder="0" id="garland_10" name="garland_10">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="garland_15">15 foot garland: $225 x</label>
                 <input type="number" min="0" max="10" placeholder="0" id="garland_15" name="garland_15">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="garland_20">20 foot garland: $300 x</label>
                 <input type="number" min="0" max="10" placeholder="0" id="garland_20" name="garland_20">
             </div>
@@ -89,102 +98,119 @@
 <!--    GARLAND    -->
 <!--    NUMBERS    -->
         <div class="row">
-            <div class="col-sm-5 col-xl-4">
+            <div class="col-sm-11 text-left">
                 <h5>numbers</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="numbers_1">1 number </label>
                 <input type="number" min="0" max="9" placeholder="0" id="numbers_1" name="numbers_1">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="numbers_2">2 numbers </label>
                 <input type="number" min="10" max="99" placeholder="10" id="numbers_2" name="numbers_2">
             </div>
         </div>
-<!--        <div class="row">-->
-<!--            <div class="col-sm-5 col-xl-4 form-group">-->
-<!--                <label for="numbers_3">3 numbers </label>-->
-<!--                <input type="number" min="100" max="999" placeholder="100" id="numbers_3" name="numbers_3">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-sm-5 col-xl-4 form-group">-->
-<!--                <label for="numbers_4">4 numbers </label>-->
-<!--                <input type="number" min="1000" max="9999" placeholder="1000" id="numbers_4" name="numbers_4">-->
-<!--            </div>-->
-<!--        </div>-->
 <!--    NUMBERS    -->
 <!--    ADD-ONS    -->
         <div class="row">
-            <div class="col-sm-5 col-xl-4">
+            <div class="col-sm-11 text-left">
                 <h5>add-ons</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
-                <label for="foil">foil/mylar balloons </label>
+            <div class="col-sm-9 text-left">
+                <label for="foil">foil/mylar add-on balloon(s) </label>
                 <input type="number" min="0" max="50" placeholder="0" id="foil" name="foil">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="confetti">confetti cannon </label>
                 <input type="number" min="0" max="50" placeholder="0" id="confetti" name="confetti">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="sunglasses">fun sunglasses </label>
                 <input type="number" min="0" max="50" placeholder="0" id="sunglasses" name="sunglasses">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
+            <div class="col-sm-9 text-left">
                 <label for="specialty">specialty balloons </label>
                 <input type="number" min="0" max="50" placeholder="0" id="specialty" name="specialty">
             </div>
         </div>
 <!--    ADD-ONS-->
+<!--    NAME    -->
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
-                <label for="name">name</label>
+            <div class="col-sm-11 text-left">
+                <label for="name"><h5>name</h5></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9 text-left">
                 <input aria-hidden="true"  type="text" class="form-control" id="name" name="name" required>
             </div>
         </div>
+<!--    NAME    -->
+<!--    PHONE    -->
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
-                <label for="phone">phone number</label>
+            <div class="col-sm-11 text-left">
+                <label for="phone"><h5>phone number</h5></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9 text-left">
                 <input aria-hidden="true" type="text" class="form-control" id="phone" name="phone" required>
             </div>
         </div>
+<!--    PHONE    -->
+<!--    EMAIL    -->
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
-                <label for="email">email</label>
-                <input aria-hidden="true"  type="email" class="form-control" id="email" name="email" required>
+            <div class="col-sm-11 text-left">
+                <label for="email"><h5>email</h5></label>
             </div>
         </div>
         <div class="row">
+            <div class="col-sm-9 text-left">
+                <input aria-hidden="true"  type="email" class="form-control" id="email" name="email" required>
+            </div>
+        </div>
+<!--    EMAIL    -->
+<!--    DELIVERY DATE    -->
+        <div class="row">
+            <div class="col-sm-11 text-left">
+                <label for="date"><h5>delivery/pick-up date</h5></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9 text-left">
+                <textarea class="form-control" id="date" rows="1" name="date" required></textarea>
+            </div>
+        </div>
+<!--    DELIVERY DATE    -->
+<!--    DELIVERY TIME    -->
+        <div class="row">
+            <div class="col-sm-6 text-left">
+                <label for="time"><h5>delivery/pick-up time</h5></label>
+            </div>
             <div class="col-sm-5 col-xl-4 form-group">
                 <label for="comments">tell us about the event and delivery instructions</label>
                 <textarea aria-hidden="true"  class="form-control" id="comments" rows="5" name="comments" required></textarea>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
-                <label for="date">delivery/pick-up date</label>
-                <textarea class="form-control" id="date" rows="1" name="date" required></textarea>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-5 col-xl-4 form-group">
-                <label for="time">delivery/pick-up time</label>
+            <div class="col-sm-6 text-left">
                 <textarea class="form-control" id="time" rows="1" name="time" required></textarea>
             </div>
         </div>
+<!--    DELIVERY TIME    -->
+
         <div class="row">
             <button type="submit" class="btn">submit</button>
         </div>
