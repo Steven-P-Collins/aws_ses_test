@@ -2,12 +2,6 @@ body {
     background-color: #E6E6FA;
 }
 
-/*.container-fluid.no-gutters {*/
-/*    padding: 0 !important;*/
-/*    width: 100%;*/
-/*}*/
-
-
 .background {
     background-color: #ffffff;
     border-radius: 25px;
@@ -20,4 +14,8 @@ body {
 
 body {
     padding-top: 56px;
+}
+
+.nav_padding {
+    padding: 0 3% !important;
 }
