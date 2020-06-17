@@ -8,66 +8,112 @@
     <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">love, balloons xoxo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orders.html">orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <div class="container-fluid text-center justify-content-center">
     <h1>orders</h1>
     <form class="form" enctype="text/plain">
-        <div class="row">
-            <div class="col-sm-11 text-left form-group">
-                <h5>delivery zone and fees</h5>
+<!--    CONTACT-->
+        <div class="container-fluid">
+            <div class="row form-group background">
+                <div class="col-sm-7 text-left">
+                    <h5>delivery and contact information</h5>
+                    <div class="row">
+                        <div class="offset-sm-1 col-sm-5 text-left">
+                            <label for="name">name</label>
+                            <input aria-hidden="true" type="text" class="form-control" id="name" name="name" required>
+                            <label for="phone">phone number</label>
+                            <input aria-hidden="true" type="text" class="form-control" id="phone" name="phone" required>
+                            <label for="email">email</label>
+                            <input aria-hidden="true" type="email" class="form-control" id="email" name="email" required>
+                            <label for="date">delivery/pick-up date</label>
+                            <textarea class="form-control" id="date" rows="1" name="date" required></textarea>
+                            <label for="time">delivery/pick-up time</label>
+                            <textarea class="form-control" id="time" rows="1" name="time" required></textarea>
+                        </div>
+                        <div class="col-sm-6 text-left">
+                            <label for="deliver_to">deliver to</label>
+                            <input type="text" class="form-control" id="deliver_to" name="deliver_to" required><label for="deliver_to">deliver to</label>
+                            <label for="address_1">address 1</label>
+                            <input type="text" class="form-control" id="address_1" name="address_1" required>
+                            <label for="city">city</label>
+                            <input type="text" class="form-control" id="city" name="city" required>
+                            <label for="state">state</label>
+                            <input type="text" class="form-control" id="state" name="state" required>
+                            <label for="zip">zip</label>
+                            <input type="number" min="00000" max="99999" class="form-control" id="zip" name="zip" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-left">
+                    <label for="del_zone">delivery zone</label>
+                    <select class="form-control" id="del_zone" name="delivery" required>
+                        <option value="1">10573</option>
+                        <option value="1">10580</option>
+                        <option value="1">10528</option>
+                        <option value="2">10605</option>
+                        <option value="2">10543</option>
+                        <option value="3">10538</option>
+                        <option value="3">06830</option>
+                        <option value="4">06831</option>
+                        <option value="4">06878</option>
+                        <option value="4">06870</option>
+                        <option value="5">10708</option>
+                        <option value="0">local pick-up</option>
+                    </select>
+                    <div class="min_orders">
+                        <p>delivery fee: $50</p>
+                        <p>minimum order: $150</p>
+                        <p>minimum order + delivery = $200</p>
+                    </div>
+                    <label for="comments">tell us about the event and delivery instructions</label>
+                    <textarea aria-hidden="true" class="form-control" id="comments" rows="5" name="comments" required></textarea>
+                </div>
             </div>
         </div>
-        <div class="row form-group">
-            <div class="col-sm-9 text-left">
-                <label for="del_zone">delivery zone</label>
-                <select id="del_zone" name="delivery" required>
-                    <option value="1">10573</option>
-                    <option value="1">10580</option>
-                    <option value="1">10528</option>
-                    <option value="2">10605</option>
-                    <option value="2">10543</option>
-                    <option value="3">10538</option>
-                    <option value="3">06830</option>
-                    <option value="4">06831</option>
-                    <option value="4">06878</option>
-                    <option value="4">06870</option>
-                    <option value="5">10708</option>
-                    <option value="0">local pick-up</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <p>delivery fee: $50</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <p>minimum order: $150</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <p>minimum order + delivery = $200</p>
-            </div>
-        </div>
-
-        <!--    BOUQUET    -->
+<!--    CONTACT    -->
+<!--    BOUQUET    -->
         <div class="container-fluid">
             <div class="row form-group background">
                 <div class="col-sm-7 text-left">
                     <h5>bouquet of 10 - 12 helium filled balloons</h5>
                     <div class="row">
-                        <div class="offset-sm-1 col-sm-7 text-left">
+                        <div class="offset-sm-1 col-sm-5 text-left">
                             <label for="bouquet">bouquets: $50 x</label>
-                            <input type="number" min="0" max="50" placeholder="0" id="bouquet" name="bouquet">
-                            <label for="foil">foil/mylar add-on balloon(s) x </label>
-                            <input type="number" min="0" max="50" placeholder="0" id="foil" name="foil">
+                            <input type="number" class="form-control" min="0" max="50" placeholder="0" id="bouquet" name="bouquet">
+                            <label for="foil">foil/mylar balloon(s): $10 x </label>
+                            <input type="number" class="form-control" min="0" max="50" placeholder="0" id="foil" name="foil">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-5 text-left">
                     <label for="bouq_comments">special instructions/description</label>
-                    <textarea aria-hidden="true" class="form-control" id="bouq_comments" rows="2" name="bouq_comments" required></textarea>
+                    <textarea aria-hidden="true" class="form-control" id="bouq_comments" rows="5" name="bouq_comments"></textarea>
                 </div>
             </div>
         </div>
@@ -78,19 +124,19 @@
                 <div class="col-sm-7 text-left">
                     <h5>garland of balloons</h5>
                     <div class="row">
-                        <div class="offset-sm-1 col-sm-7 text-left">
+                        <div class="offset-sm-1 col-sm-5 text-left">
                             <label for="garland_10">10 foot garland:  $150 x</label>
-                            <input type="number"  min="0" max="10" placeholder="0" id="garland_10" name="garland_10">
+                            <input type="number" class="form-control" min="0" max="10" placeholder="0" id="garland_10" name="garland_10">
                             <label for="garland_15">15 foot garland: $225 x</label>
-                            <input type="number" min="0" max="10" placeholder="0" id="garland_15" name="garland_15">
+                            <input type="number" class="form-control" min="0" max="10" placeholder="0" id="garland_15" name="garland_15">
                             <label for="garland_20">20 foot garland: $300 x</label>
-                            <input type="number" min="0" max="10" placeholder="0" id="garland_20" name="garland_20">
+                            <input type="number" class="form-control" min="0" max="10" placeholder="0" id="garland_20" name="garland_20">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-5 text-left">
                     <label for="gar_comments">special instructions/description</label>
-                    <textarea aria-hidden="true" class="form-control" id="gar_comments" rows="3" name="gar_comments" required></textarea>
+                    <textarea aria-hidden="true" class="form-control" id="gar_comments" rows="8" name="gar_comments"></textarea>
                 </div>
 
             </div>
@@ -102,17 +148,17 @@
                 <div class="col-sm-7 text-left">
                     <h5>numbers</h5>
                     <div class="row">
-                        <div class="offset-sm-1 col-sm-4 text-left">
-                            <label for="numbers_1">1 number </label>
-                            <input type="number" min="0" max="9" placeholder="0" id="numbers_1" name="numbers_1">
-                                <label for="numbers_2">2 numbers </label>
-                                <input type="number" min="10" max="99" placeholder="10" id="numbers_2" name="numbers_2">
+                        <div class="offset-sm-1 col-sm-5 text-left">
+                            <label for="numbers_1">1 number: $250 </label>
+                            <input type="number" class="form-control" min="0" max="9" placeholder="0" id="numbers_1" name="numbers_1">
+                            <label for="numbers_2">2 numbers: $350 </label>
+                            <input type="number" class="form-control" min="10" max="99" placeholder="10" id="numbers_2" name="numbers_2">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-5 text-left">
                     <label for="num_comments">special instructions/description</label>
-                    <textarea aria-hidden="true" class="form-control" id="num_comments" rows="2" name="num_comments" required></textarea>
+                    <textarea aria-hidden="true" class="form-control" id="num_comments" rows="5" name="num_comments"></textarea>
                 </div>
             </div>
         </div>
@@ -124,88 +170,22 @@
                     <h5>add-ons</h5>
                     <div class="row">
                         <div class="offset-sm-1 col-sm-5 text-left">
-                            <label for="confetti">confetti cannons x</label>
-                            <input type="number" min="0" max="50" placeholder="0" id="confetti" name="confetti">
-                            <label for="sunglasses">fun sunglasses x</label>
-                            <input type="number" min="0" max="50" placeholder="0" id="sunglasses" name="sunglasses">
-                            <label for="specialty">specialty balloons x</label>
-                            <input type="number" min="0" max="50" placeholder="0" id="specialty" name="specialty">
+                            <label for="confetti">confetti cannons: $20 x</label>
+                            <input type="number" class="form-control" min="0" max="50" placeholder="0" id="confetti" name="confetti">
+                            <label for="sunglasses">fun sunglasses: $10 x</label>
+                            <input type="number" class="form-control" min="0" max="50" placeholder="0" id="sunglasses" name="sunglasses">
+                            <label for="specialty">specialty balloons: $TBD x</label>
+                            <input type="number" class="form-control" min="0" max="50" placeholder="0" id="specialty" name="specialty">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-5 text-left">
                     <label for="add_comments">special instructions/description</label>
-                    <textarea aria-hidden="true" class="form-control" id="add_comments" rows="3" name="add_comments" required></textarea>
+                    <textarea aria-hidden="true" class="form-control" id="add_comments" rows="8" name="add_comments"></textarea>
                 </div>
             </div>
         </div>
 <!--    ADD-ONS-->
-<!--    NAME    -->
-        <div class="row">
-            <div class="col-sm-11 text-left">
-                <label for="name"><h5>name</h5></label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <input aria-hidden="true"  type="text" class="form-control" id="name" name="name" required>
-            </div>
-        </div>
-<!--    NAME    -->
-<!--    PHONE    -->
-        <div class="row">
-            <div class="col-sm-11 text-left">
-                <label for="phone"><h5>phone number</h5></label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <input aria-hidden="true" type="text" class="form-control" id="phone" name="phone" required>
-            </div>
-        </div>
-<!--    PHONE    -->
-<!--    EMAIL    -->
-        <div class="row">
-            <div class="col-sm-11 text-left">
-                <label for="email"><h5>email</h5></label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <input aria-hidden="true"  type="email" class="form-control" id="email" name="email" required>
-            </div>
-        </div>
-<!--    EMAIL    -->
-<!--    DELIVERY DATE    -->
-        <div class="row">
-            <div class="col-sm-11 text-left">
-                <label for="date"><h5>delivery/pick-up date</h5></label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-9 text-left">
-                <textarea class="form-control" id="date" rows="1" name="date" required></textarea>
-            </div>
-        </div>
-<!--    DELIVERY DATE    -->
-<!--    DELIVERY TIME    -->
-        <div class="row">
-            <div class="col-sm-6 text-left">
-                <label for="time"><h5>delivery/pick-up time</h5></label>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 text-left">
-                    <textarea class="form-control" id="time" rows="1" name="time" required></textarea>
-                </div>
-            </div>
-            <div class="col-sm-5 ">
-                <label for="comments">tell us about the event and delivery instructions</label>
-                <textarea aria-hidden="true" class="form-control" id="comments" rows="5" name="comments" required></textarea>
-            </div>
-        </div>
-
-<!--    DELIVERY TIME    -->
-
         <div class="row">
             <button type="submit" class="btn">submit</button>
         </div>

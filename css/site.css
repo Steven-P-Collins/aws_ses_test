@@ -13,3 +13,11 @@ body {
     border-radius: 25px;
     padding: 15px;
 }
+
+.min_orders {
+    padding: 5% 0 0 10%;
+}
+
+body {
+    padding-top: 65px;
+}
