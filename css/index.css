@@ -3,6 +3,6 @@
     min-height: 500px;
     background-image: url('../imgs/hero.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
